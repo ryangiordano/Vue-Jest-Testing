@@ -1,0 +1,32 @@
+
+@mixin default-text-color($text-color){
+    color:$text-color;
+}
+
+@mixin smGlass{
+    @media (min-width: #{$small-glass}){
+        @content;
+    }
+}
+@mixin mdGlass{
+    @media (min-width: #{$mid-glass}){
+        @content;
+    }
+}
+@mixin lgGlass{
+    @media (min-width: #{$large-glass}){
+        @content;
+    }
+}
+@mixin xlGlass{
+    @media (min-width: #{$xlarge-glass}){
+        @content;
+    }
+}
+
+//custom devices
+@mixin rwd($screen){
+    @media(min-width: $screen + 'px'){
+        @content;
+    }
+}
