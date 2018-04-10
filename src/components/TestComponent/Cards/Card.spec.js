@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import Card from '@/components/TestComponent/Cards/Card.vue';
+import Card from './Card.vue';
 
 describe('Card.vue',()=>{
     const Constructor = Vue.extend(Card);
